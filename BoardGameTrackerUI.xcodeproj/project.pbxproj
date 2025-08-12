@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C2A79722E3EFFCF00FAC152 /* README.text in Resources */ = {isa = PBXBuildFile; fileRef = 1C2A796F2E3EFFCF00FAC152 /* README.text */; };
+		1C2A79AA2E3F19DA00FAC152 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79A92E3F19DA00FAC152 /* Auth */; };
+		1C2A79AC2E3F19DA00FAC152 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79AB2E3F19DA00FAC152 /* Functions */; };
+		1C2A79AE2E3F19DA00FAC152 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79AD2E3F19DA00FAC152 /* PostgREST */; };
+		1C2A79B02E3F19DA00FAC152 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79AF2E3F19DA00FAC152 /* Realtime */; };
+		1C2A79B22E3F19DA00FAC152 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B12E3F19DA00FAC152 /* Storage */; };
+		1C2A79B42E3F1AB000FAC152 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B32E3F1AB000FAC152 /* Auth */; };
+		1C2A79B62E3F1AB000FAC152 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B52E3F1AB000FAC152 /* Functions */; };
+		1C2A79B82E3F1AB000FAC152 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B72E3F1AB000FAC152 /* PostgREST */; };
+		1C2A79BA2E3F1AB000FAC152 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B92E3F1AB000FAC152 /* Realtime */; };
+		1C2A79BC2E3F1AB000FAC152 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79BB2E3F1AB000FAC152 /* Storage */; };
+		1C2A79BE2E3F1AC900FAC152 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79BD2E3F1AC900FAC152 /* Supabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47899E352E14554D00CAD163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47899E1A2E14554B00CAD163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47899E212E14554B00CAD163;
+			remoteInfo = BoardGameTrackerUI;
+		};
+		47899E3F2E14554D00CAD163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47899E1A2E14554B00CAD163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47899E212E14554B00CAD163;
+			remoteInfo = BoardGameTrackerUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C2A796F2E3EFFCF00FAC152 /* README.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.text; sourceTree = "<group>"; };
+		4742EB9D2E3BE3DF006F092F /* BoardGameTrackerUI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BoardGameTrackerUI.xctestplan; sourceTree = "<group>"; };
+		47899E222E14554B00CAD163 /* BoardGameTrackerUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGameTrackerUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47899E342E14554D00CAD163 /* BoardGameTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47899E3E2E14554D00CAD163 /* BoardGameTrackerUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardGameTrackerUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1C0C84DF2E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PlusForList.swift,
+				Test.swift,
+			);
+			target = 47899E212E14554B00CAD163 /* BoardGameTrackerUI */;
+		};
+		1C0C84E02E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUIUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PlusForList.swift,
+				Test.swift,
+			);
+			target = 47899E3D2E14554D00CAD163 /* BoardGameTrackerUIUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1C0C84DC2E3C4F5B003DCF14 /* Z */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1C0C84DF2E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUI" target */,
+				1C0C84E02E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUIUITests" target */,
+			);
+			path = Z;
+			sourceTree = "<group>";
+		};
+		47899E242E14554B00CAD163 /* BoardGameTrackerUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BoardGameTrackerUI;
+			sourceTree = "<group>";
+		};
+		47899E372E14554D00CAD163 /* BoardGameTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BoardGameTrackerUITests;
+			sourceTree = "<group>";
+		};
+		47899E412E14554D00CAD163 /* BoardGameTrackerUIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BoardGameTrackerUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47899E1F2E14554B00CAD163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2A79AE2E3F19DA00FAC152 /* PostgREST in Frameworks */,
+				1C2A79AC2E3F19DA00FAC152 /* Functions in Frameworks */,
+				1C2A79BE2E3F1AC900FAC152 /* Supabase in Frameworks */,
+				1C2A79AA2E3F19DA00FAC152 /* Auth in Frameworks */,
+				1C2A79B22E3F19DA00FAC152 /* Storage in Frameworks */,
+				1C2A79B02E3F19DA00FAC152 /* Realtime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E312E14554D00CAD163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2A79B82E3F1AB000FAC152 /* PostgREST in Frameworks */,
+				1C2A79B62E3F1AB000FAC152 /* Functions in Frameworks */,
+				1C2A79B42E3F1AB000FAC152 /* Auth in Frameworks */,
+				1C2A79BC2E3F1AB000FAC152 /* Storage in Frameworks */,
+				1C2A79BA2E3F1AB000FAC152 /* Realtime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E3B2E14554D00CAD163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47899E192E14554B00CAD163 = {
+			isa = PBXGroup;
+			children = (
+				4742EB9D2E3BE3DF006F092F /* BoardGameTrackerUI.xctestplan */,
+				47899E242E14554B00CAD163 /* BoardGameTrackerUI */,
+				47899E372E14554D00CAD163 /* BoardGameTrackerUITests */,
+				47899E412E14554D00CAD163 /* BoardGameTrackerUIUITests */,
+				1C0C84DC2E3C4F5B003DCF14 /* Z */,
+				1C2A796F2E3EFFCF00FAC152 /* README.text */,
+				47899E232E14554B00CAD163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47899E232E14554B00CAD163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47899E222E14554B00CAD163 /* BoardGameTrackerUI.app */,
+				47899E342E14554D00CAD163 /* BoardGameTrackerUITests.xctest */,
+				47899E3E2E14554D00CAD163 /* BoardGameTrackerUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47899E212E14554B00CAD163 /* BoardGameTrackerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47899E482E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUI" */;
+			buildPhases = (
+				47899E1E2E14554B00CAD163 /* Sources */,
+				47899E1F2E14554B00CAD163 /* Frameworks */,
+				47899E202E14554B00CAD163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				47899E242E14554B00CAD163 /* BoardGameTrackerUI */,
+			);
+			name = BoardGameTrackerUI;
+			packageProductDependencies = (
+				1C2A79A92E3F19DA00FAC152 /* Auth */,
+				1C2A79AB2E3F19DA00FAC152 /* Functions */,
+				1C2A79AD2E3F19DA00FAC152 /* PostgREST */,
+				1C2A79AF2E3F19DA00FAC152 /* Realtime */,
+				1C2A79B12E3F19DA00FAC152 /* Storage */,
+				1C2A79BD2E3F1AC900FAC152 /* Supabase */,
+			);
+			productName = BoardGameTrackerUI;
+			productReference = 47899E222E14554B00CAD163 /* BoardGameTrackerUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47899E332E14554D00CAD163 /* BoardGameTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47899E4B2E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUITests" */;
+			buildPhases = (
+				47899E302E14554D00CAD163 /* Sources */,
+				47899E312E14554D00CAD163 /* Frameworks */,
+				47899E322E14554D00CAD163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47899E362E14554D00CAD163 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				47899E372E14554D00CAD163 /* BoardGameTrackerUITests */,
+			);
+			name = BoardGameTrackerUITests;
+			packageProductDependencies = (
+				1C2A79B32E3F1AB000FAC152 /* Auth */,
+				1C2A79B52E3F1AB000FAC152 /* Functions */,
+				1C2A79B72E3F1AB000FAC152 /* PostgREST */,
+				1C2A79B92E3F1AB000FAC152 /* Realtime */,
+				1C2A79BB2E3F1AB000FAC152 /* Storage */,
+			);
+			productName = BoardGameTrackerUITests;
+			productReference = 47899E342E14554D00CAD163 /* BoardGameTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47899E3D2E14554D00CAD163 /* BoardGameTrackerUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47899E4E2E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUIUITests" */;
+			buildPhases = (
+				47899E3A2E14554D00CAD163 /* Sources */,
+				47899E3B2E14554D00CAD163 /* Frameworks */,
+				47899E3C2E14554D00CAD163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47899E402E14554D00CAD163 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1C0C84DC2E3C4F5B003DCF14 /* Z */,
+				47899E412E14554D00CAD163 /* BoardGameTrackerUIUITests */,
+			);
+			name = BoardGameTrackerUIUITests;
+			packageProductDependencies = (
+			);
+			productName = BoardGameTrackerUIUITests;
+			productReference = 47899E3E2E14554D00CAD163 /* BoardGameTrackerUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47899E1A2E14554B00CAD163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					47899E212E14554B00CAD163 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					47899E332E14554D00CAD163 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 47899E212E14554B00CAD163;
+					};
+					47899E3D2E14554D00CAD163 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 47899E212E14554B00CAD163;
+					};
+				};
+			};
+			buildConfigurationList = 47899E1D2E14554B00CAD163 /* Build configuration list for PBXProject "BoardGameTrackerUI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47899E192E14554B00CAD163;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 47899E232E14554B00CAD163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47899E212E14554B00CAD163 /* BoardGameTrackerUI */,
+				47899E332E14554D00CAD163 /* BoardGameTrackerUITests */,
+				47899E3D2E14554D00CAD163 /* BoardGameTrackerUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47899E202E14554B00CAD163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2A79722E3EFFCF00FAC152 /* README.text in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E322E14554D00CAD163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E3C2E14554D00CAD163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47899E1E2E14554B00CAD163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E302E14554D00CAD163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47899E3A2E14554D00CAD163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47899E362E14554D00CAD163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47899E212E14554B00CAD163 /* BoardGameTrackerUI */;
+			targetProxy = 47899E352E14554D00CAD163 /* PBXContainerItemProxy */;
+		};
+		47899E402E14554D00CAD163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47899E212E14554B00CAD163 /* BoardGameTrackerUI */;
+			targetProxy = 47899E3F2E14554D00CAD163 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47899E462E14554D00CAD163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47899E472E14554D00CAD163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47899E492E14554D00CAD163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoardGameTrackerUI/Preview Content\"";
+				DEVELOPMENT_TEAM = T65C3YFBH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47899E4A2E14554D00CAD163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BoardGameTrackerUI/Preview Content\"";
+				DEVELOPMENT_TEAM = T65C3YFBH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47899E4C2E14554D00CAD163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGameTrackerUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoardGameTrackerUI";
+			};
+			name = Debug;
+		};
+		47899E4D2E14554D00CAD163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardGameTrackerUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoardGameTrackerUI";
+			};
+			name = Release;
+		};
+		47899E4F2E14554D00CAD163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoardGameTrackerUI;
+			};
+			name = Debug;
+		};
+		47899E502E14554D00CAD163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = shaylee.BoardGameTrackerUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoardGameTrackerUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47899E1D2E14554B00CAD163 /* Build configuration list for PBXProject "BoardGameTrackerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47899E462E14554D00CAD163 /* Debug */,
+				47899E472E14554D00CAD163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47899E482E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47899E492E14554D00CAD163 /* Debug */,
+				47899E4A2E14554D00CAD163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47899E4B2E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47899E4C2E14554D00CAD163 /* Debug */,
+				47899E4D2E14554D00CAD163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47899E4E2E14554D00CAD163 /* Build configuration list for PBXNativeTarget "BoardGameTrackerUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47899E4F2E14554D00CAD163 /* Debug */,
+				47899E502E14554D00CAD163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C2A79A92E3F19DA00FAC152 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		1C2A79AB2E3F19DA00FAC152 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		1C2A79AD2E3F19DA00FAC152 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		1C2A79AF2E3F19DA00FAC152 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		1C2A79B12E3F19DA00FAC152 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		1C2A79B32E3F1AB000FAC152 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		1C2A79B52E3F1AB000FAC152 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		1C2A79B72E3F1AB000FAC152 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		1C2A79B92E3F1AB000FAC152 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		1C2A79BB2E3F1AB000FAC152 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		1C2A79BD2E3F1AC900FAC152 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 47899E1A2E14554B00CAD163 /* Project object */;
+}

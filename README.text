@@ -1,0 +1,20 @@
+*** TODO ***
+    Add Template Page:
+        - edit button
+            - delete template
+            - edit template
+            - duplicate template
+        - display account profile images
+    Main Page:
+        - Event view
+            - selection of team for navigation
+            - edit button
+                - can adjust values for event (cannot change teams)
+        - edit button
+            - delete event
+    Other:
+    - Profile view
+    - account creation
+    - account log in
+    - api set up
+    

@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "875FDD2A-D83B-40F7-9AB6-BD58B1FB9F19",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BoardGameTrackerUI.xcodeproj",
+      "identifier" : "47899E212E14554B00CAD163",
+      "name" : "BoardGameTrackerUI"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BoardGameTrackerUI.xcodeproj",
+        "identifier" : "47899E332E14554D00CAD163",
+        "name" : "BoardGameTrackerUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BoardGameTrackerUI.xcodeproj",
+        "identifier" : "47899E3D2E14554D00CAD163",
+        "name" : "BoardGameTrackerUIUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
