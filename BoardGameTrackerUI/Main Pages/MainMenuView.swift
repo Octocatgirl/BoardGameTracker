@@ -7,16 +7,12 @@
 
 import SwiftUI
 import SwiftData
-import Supabase
-
-
 
 struct MainMenuView: View {
     @Environment(\.modelContext) private var _modelContext
     let screenSize: CGRect = UIScreen.main.bounds
     @ObservedObject var account: Account
     // database connection
-    let client = SupabaseClient(supabaseURL: URL(string: "https://krcyuvpyhwqfycpeusap.supabase.co")!, supabaseKey: "public-anon-key")
         // sets what the current page it starts with
         // can edit for certain functions too
     @State var selectedTab = 1

@@ -19,6 +19,7 @@
 		1C2A79BA2E3F1AB000FAC152 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79B92E3F1AB000FAC152 /* Realtime */; };
 		1C2A79BC2E3F1AB000FAC152 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79BB2E3F1AB000FAC152 /* Storage */; };
 		1C2A79BE2E3F1AC900FAC152 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1C2A79BD2E3F1AC900FAC152 /* Supabase */; };
+		1CCD78E52E4D48EE00159CEB /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 1CCD78E42E4D48EE00159CEB /* Storage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		1C0C84DF2E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				CreateAccountView.swift,
+				OpenAppView.swift,
 				PlusForList.swift,
 				Test.swift,
 			);
@@ -58,6 +61,8 @@
 		1C0C84E02E3C4F5B003DCF14 /* Exceptions for "Z" folder in "BoardGameTrackerUIUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				CreateAccountView.swift,
+				OpenAppView.swift,
 				PlusForList.swift,
 				Test.swift,
 			);
@@ -122,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCD78E52E4D48EE00159CEB /* Storage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +235,7 @@
 			);
 			name = BoardGameTrackerUIUITests;
 			packageProductDependencies = (
+				1CCD78E42E4D48EE00159CEB /* Storage */,
 			);
 			productName = BoardGameTrackerUIUITests;
 			productReference = 47899E3E2E14554D00CAD163 /* BoardGameTrackerUIUITests.xctest */;
@@ -696,6 +703,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
+		};
+		1CCD78E42E4D48EE00159CEB /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C2A79A82E3F156100FAC152 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

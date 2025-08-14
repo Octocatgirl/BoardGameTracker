@@ -20,40 +20,23 @@ struct BoardGameTrackerUIApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
+    
+    @State var user: AppUser?
+    
     var body: some Scene {
         WindowGroup {
-            MainMenuView(account:createTestAccount())
+            if user != nil {
+                Text(user?.email ?? "ERROR")
+            }
+            else {
+                SignInView(appUser: $user)
+            }
+//            MainMenuView(account: createTestAccount())
+        
         }
         .modelContainer(sharedModelContainer)
     }
 }
 
-
-func createTestAccount(friends: Int = Int.random(in: 3..<25), templates: Int = 1, events: Int = 0 ) -> Account{
-    let ac = Account(username: "Your Name", password: "")
-    for _ in 0..<friends{
-        let newFriend = Account(username: "Friend \(Int.random(in: 0..<100))", password: "")
-        ac.add_friend(otherAccount: newFriend)
-    }
-    for _ in 0..<templates {
-        let temp = Template(name: "Game \(Int.random(in: 0..<100))")
-        ac.add_template(template: temp)
-    }
-    for _ in 0..<events {
-        for temp in ac.templates {
-            let  event = Event(name: temp.name, template: temp)
-            ac.add_event(event: event)
-        }
-    }
-        
-
-    
-    
-    return ac
-}
-
-#Preview {
-    MainMenuView(account:createTestAccount())
-}
 

@@ -11,7 +11,6 @@ class Account: ObservableObject, Equatable, Identifiable {
     public var id: UUID = UUID()
     
     private var _username: String
-    private var _password: String
     private var _friends: [Account] = []
     private var _imageURL: String = "person.circle"
     
@@ -19,9 +18,8 @@ class Account: ObservableObject, Equatable, Identifiable {
     @Published public var templates: [Template] = []
     
     // called when account is first created 
-    init(username: String, password: String){
+    init(username: String){
         _username = username
-        _password = password
     }
     
     func add_event(event: Event){
