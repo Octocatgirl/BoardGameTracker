@@ -14,9 +14,12 @@ struct ProfileView : View {
     
     var body: some View {
         VStack {
-            Text("Username: ")
-            Text("Password:")
+            Text("Username: \(account.username())")
             Text("Friend Code: ")
+            Button("Sign out") {
+                
+            }
+            .foregroundColor(.red)
         }
     }
 }

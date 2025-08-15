@@ -54,6 +54,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "47899E212E14554B00CAD163"
+            BuildableName = "BoardGameTrackerUI.app"
+            BlueprintName = "BoardGameTrackerUI"
+            ReferencedContainer = "container:BoardGameTrackerUI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
