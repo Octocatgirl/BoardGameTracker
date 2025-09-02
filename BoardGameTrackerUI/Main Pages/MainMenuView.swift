@@ -11,6 +11,7 @@ import SwiftData
 struct MainMenuView: View {
     @Environment(\.modelContext) private var _modelContext
     let screenSize: CGRect = UIScreen.main.bounds
+    @Binding var appUser: AppUser?
     @ObservedObject var account: Account
     // database connection
         // sets what the current page it starts with
@@ -28,7 +29,7 @@ struct MainMenuView: View {
                     .tabItem{
                         Image( systemName: "plus.square")
                     }.tag(1)
-                ProfileView(account: account)
+                ProfileView(user: $appUser, account: account)
                 // make the image the account image
                     .tabItem{
                         Image(systemName: "person.crop.circle")

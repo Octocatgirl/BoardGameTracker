@@ -42,6 +42,7 @@ struct SignInView: View {
                     do {
                         let appUser = try await viewModel.signInWithEmail(email: email, password: password)
                         self.appUser = appUser
+                        print("Session is now: \(String(describing: appUser))")
                     } catch {
                         errorMessage = "Error with sign in"
                     }

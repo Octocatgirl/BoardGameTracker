@@ -25,8 +25,6 @@ class AuthManager {
     
     func getCurrentSession() async throws -> AppUser {
         let session = try await client.auth.session
-//        print(session)
-//        print(session.user.id)
         return AppUser(uid: session.user.id.uuidString, email: session.user.email)
     }
     
