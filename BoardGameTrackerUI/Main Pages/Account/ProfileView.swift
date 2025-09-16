@@ -10,12 +10,11 @@ import SwiftData
 
 
 struct ProfileView : View {
-    @Binding var user: AppUser?
-    @ObservedObject var account: Account
+    @Binding var user: Account?
     
     var body: some View {
         VStack {
-            Text("Email: \(account.username())")
+            Text("Email: \(user?.username() ?? "")")
             Text("Friend Code: ")
             Spacer()
             Button("Sign out") {

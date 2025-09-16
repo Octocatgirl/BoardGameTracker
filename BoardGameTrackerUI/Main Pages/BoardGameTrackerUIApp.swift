@@ -22,14 +22,14 @@ struct BoardGameTrackerUIApp: App {
     }()
     
     
-    @State var user: AppUser?
+    @State var user: Account?
     
     
     var body: some Scene {
         WindowGroup {
             VStack {
                 if user != nil {
-                    MainMenuView(appUser: $user, account: Account(username: user?.email ?? "ERROR: Invalid User"))
+                    MainMenuView(appUser: $user)
                 }
                 else {
                     SignInView(appUser: $user)

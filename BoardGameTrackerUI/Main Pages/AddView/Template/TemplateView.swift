@@ -21,7 +21,7 @@ struct TemplateView : View {
     
     var body: some View {
         VStack {
-            Text(template.name)
+            Text(template.title)
                 .font(.headline)
             
 //            TeamImage(team: $selectedTeam)

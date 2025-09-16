@@ -12,19 +12,19 @@ struct TemplateListView: View {
     @Binding var isTabBarVisible: Bool
     @State private var alertDelete: Bool = false
     @State private var indexToDelete: IndexSet?
+    @State private var templateList: [TemplateListItem] = []
     
     var body: some View {
         ScrollView{
             LazyVStack(spacing: 15) {
-                ForEach(account.templates) { temp in
-        
+                ForEach(templateList) { temp in
                     Button(action: {
-                        temp.account = self.account
+//                        temp.account = self.account
                         isTabBarVisible = false
                         paths.append(temp.id)
                     }) {
                         HStack {
-                            Text(temp.name)
+                            Text(temp.title)
                             Spacer()
                             Image(systemName: "plus")
                         }.padding()
@@ -54,9 +54,13 @@ struct TemplateListView: View {
             }
             .padding()
             .navigationDestination(for: UUID.self){ dest in
-                SelectPlayersView(paths: $paths, account: account, template: account.templates.first(where: {$0.id == dest})!)
+                Text("\(dest)")
+//                SelectPlayersView(paths: $paths, account: account, template: account.templates.first(where: {$0.id == dest})!)
                 }
+        }.refreshable {
+            await templateList = account.loadTemplatesList()
         }
+        
           
             
     }

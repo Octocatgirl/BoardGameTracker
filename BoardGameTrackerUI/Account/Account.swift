@@ -8,9 +8,9 @@ import Foundation
 
 
 class Account: ObservableObject, Equatable, Identifiable {
-    public var id: UUID = UUID()
+    public var id: UUID
     
-    private var _username: String
+    private var _email: String
     private var _friends: [Account] = []
     private var _imageURL: String = "person.circle"
     
@@ -18,8 +18,9 @@ class Account: ObservableObject, Equatable, Identifiable {
     @Published public var templates: [Template] = []
     
     // called when account is first created 
-    init(username: String){
-        _username = username
+    init(uid: UUID, email: String){
+        id = uid
+        _email = email
     }
     
     func add_event(event: Event){
@@ -27,7 +28,34 @@ class Account: ObservableObject, Equatable, Identifiable {
     }
     
     func add_template(template: Template) {
-        templates.append(template)
+        let temPay = TemplatePayload(id: template.id, userId: self.id, title: template.title)
+//        let link = UserTemplateIdPayload(userId: self.id, templateId: template.id)
+        Task {
+            do{
+                try await DatabaseManager.shared.addNewTemplate(item: temPay)
+            } catch {
+                print("Error adding Template: \(error.localizedDescription)")
+            }
+        }
+        
+        print("New Template added to database")
+        
+        template.uploadSection()
+    }
+    
+    func loadTemplatesList() async -> [TemplateListItem] {
+//        var templates: [TemplateListItem] = []
+        do {
+            return try await DatabaseManager.shared.fetchTemplateItems(for: self.id.uuidString)
+//            for template in templateData {
+//                let newTemplate = Template(id: template.id, title: template.name, owner: self)
+//                templates.append(newTemplate)
+//            }
+            
+        } catch {
+            print("Error in fetching Template List: \(error.localizedDescription)")
+            return []
+        }
     }
     
     func add_friend(otherAccount: Account){
@@ -43,7 +71,7 @@ class Account: ObservableObject, Equatable, Identifiable {
     }
 
     func username() -> String {
-        return _username
+        return _email
     }
     
     func friendsList() -> [Account] {
@@ -51,6 +79,6 @@ class Account: ObservableObject, Equatable, Identifiable {
     }
     
     static func == (lhs: Account, rhs: Account) -> Bool {
-           return lhs.id == rhs.id && lhs._username == rhs._username
+           return lhs.id == rhs.id && lhs._email == rhs._email
        }
 }

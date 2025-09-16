@@ -17,7 +17,7 @@ struct SignInView: View {
     @State private var isRegistrationPresented = false
     @State private var errorMessage = ""
     
-    @Binding var appUser: AppUser?
+    @Binding var appUser: Account?
     
     var body: some View {
         VStack(spacing: 20) {

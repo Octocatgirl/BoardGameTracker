@@ -14,7 +14,7 @@ struct RegistrationView: View {
     @State private var email = ""
     @State private var password = ""
     
-    @Binding var appUser: AppUser?
+    @Binding var appUser: Account?
     
     var body: some View {
         VStack {

@@ -124,7 +124,7 @@ struct SelectPlayersView: View {
     }
     
     func newEvent() -> Event {
-        return Event(name: template.name, template: template)
+        return Event(name: template.title, template: template)
     }
     
     func newDataList()  -> [Team: [TemplateSection]] {

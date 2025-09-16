@@ -1,9 +1,9 @@
-//
-//  TemplateFormContent.swift
-//  BoardGameTrackerUI
-//
-//  Created by Shaylee Coulter on 7/14/25.
-//
+    //
+    //  TemplateFormContent.swift
+    //  BoardGameTrackerUI
+    //
+    //  Created by Shaylee Coulter on 7/14/25.
+    //
 
 import SwiftUI
 
@@ -73,26 +73,16 @@ struct TemplateFormContent: View {
         
     ]
     
-    // view the page
+        // view the page
     var body: some View {
         
         VStack {
-            
-            
-            FormView(sections: $sections)
-            
             HStack {
-                Menu("Add Component", systemImage: "plus")  {
-                    // the options for the menu
-                    Button("Score Box") {AddPointsField()  }
-                    Button("Achievement List") { AddAchievementField()}
-                }.padding(20)
-                
                 Spacer()
                 Button("Save"){
                     SaveTemplate()
-                    // dimissing instead of alerting
-//                    alertSave.toggle()
+                        // dimissing instead of alerting
+                        //                    alertSave.toggle()
                 }
                 .alert(isPresented: $alertSave) {
                     Alert(
@@ -102,13 +92,24 @@ struct TemplateFormContent: View {
                     )
                 }      }.padding(.horizontal)
         }
+        FormView(sections: $sections)
+        
+        HStack {
+            Menu("Add Component", systemImage: "plus")  {
+                    // the options for the menu
+                Button("Score Box") {AddPointsField()  }
+                Button("Achievement List") { AddAchievementField()}
+            }.padding(20)
+            
+            
+        }
         
     }
     
     
-    // view functions
+        // view functions
     
-    // save template infomation
+        // save template infomation
     func SaveTemplate(){
         let temp = Template(name: sections[0].fields[0].value)
         
@@ -127,9 +128,9 @@ struct TemplateFormContent: View {
         dismiss()
     }
     
-    // different type of componenet you can add
+        // different type of componenet you can add
     
-    // add the score field to screen
+        // add the score field to screen
     func AddPointsField() {
         sections.append(
             FormSection(
@@ -149,8 +150,8 @@ struct TemplateFormContent: View {
         
     }
     
-    // add an achievement field to screen
-    // defined in the fuction
+        // add an achievement field to screen
+        // defined in the fuction
     func AddAchievementField() {
         sections.append(
             FormSection(

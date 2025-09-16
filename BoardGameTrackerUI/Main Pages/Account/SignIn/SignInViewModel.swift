@@ -17,7 +17,7 @@ class SignInViewModel: ObservableObject {
         return true
     }
     
-    func registerNewUserWithEmail(email: String, password: String) async throws -> AppUser {
+    func registerNewUserWithEmail(email: String, password: String) async throws -> Account {
         if isFormValid(email: email, password: password) {
             return try await AuthManager.shared.registerNewUserWithEmail(email: email, password: password)
         } else {
@@ -26,7 +26,7 @@ class SignInViewModel: ObservableObject {
         }
     }
     
-    func signInWithEmail(email: String, password: String) async throws -> AppUser {
+    func signInWithEmail(email: String, password: String) async throws -> Account {
         if isFormValid(email: email, password: password) {
             return try await AuthManager.shared.signInWithEmail(email: email, password: password)
         } else {
