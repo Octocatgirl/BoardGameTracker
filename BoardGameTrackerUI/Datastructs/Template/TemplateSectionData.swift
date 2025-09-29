@@ -10,11 +10,17 @@ import Foundation
 enum SelectableType {
     case Score, Achievement
 }
-struct  TemplateSection: Identifiable, Equatable{
+
+enum SectionType: String, Codable{
+    case Score = "Score"
+    case Achievement = "Achievement"
+}
+
+struct TemplateSection: Identifiable, Equatable, Decodable {
     var id = UUID()
     var label: String
     var type: SectionType
-    var hasValue: Bool  = true
+    var hasValue: Bool = true
     var value: String = ""
     var boolValue: Bool = false
 }

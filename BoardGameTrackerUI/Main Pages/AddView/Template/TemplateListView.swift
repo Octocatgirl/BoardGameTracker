@@ -54,10 +54,12 @@ struct TemplateListView: View {
             }
             .padding()
             .navigationDestination(for: UUID.self){ dest in
-                Text("\(dest)")
-//                SelectPlayersView(paths: $paths, account: account, template: account.templates.first(where: {$0.id == dest})!)
+                SelectPlayersView(paths: $paths, account: account, templateId: dest)
                 }
         }.refreshable {
+            await templateList = account.loadTemplatesList()
+        }
+        .task {
             await templateList = account.loadTemplatesList()
         }
         

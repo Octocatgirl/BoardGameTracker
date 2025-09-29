@@ -9,13 +9,17 @@
 import Foundation
 
 
-enum SectionType: String {
-    case Score, Achievement
+
+
+struct TemplateListItem: Decodable, Identifiable {
+    let id: UUID
+    let title: String
+    let user_id: UUID
+    let created_at: String
 }
 
 
-
-
+// used for creating new section
 public class Template : Identifiable{
     public var id: UUID = UUID()
     public var title: String
@@ -29,7 +33,9 @@ public class Template : Identifiable{
         self.sections = []
     }
     
-    
+    public func addSections(_label: String, _type: String, _hasValue: Bool, _value: String) {
+        self.sections.append(TemplateSection(label: _label, type: SectionType(rawValue: _type)!, hasValue: _hasValue, value: _value))
+    }
     
     public func uploadSection() {
         // for keeping track of the order of the sections in template
@@ -64,11 +70,6 @@ public class Template : Identifiable{
     }
     
 }
-
-//struct TempTemplate: Decodable {
-//    let id: UUID
-//    let title: String
-//}
 
 
 

@@ -14,7 +14,7 @@ struct TemplateSectionPayload: Codable {
     private enum CodingKeys: String, CodingKey {
         case templateId = "template_id"
         case sectionId = "section_id"
-        case order
+        case order = "section_order"
     }
 }
 
@@ -26,9 +26,3 @@ struct SectionParams: Encodable {
 }
 
 
-struct TemplateListItem: Decodable, Identifiable {
-    let id: UUID
-    let title: String
-    let user_id: UUID
-    let created_at: String
-}

@@ -34,18 +34,24 @@ class DatabaseManager {
         try await client.from("TemplateSections").insert(item).execute()
     }
     
+    func fetchTemplate(for uid: String) async throws -> TemplateListItem {
+        let response: TemplateListItem = try await client.from("Template").select().eq("id", value: uid).execute().value
+        return response
+    }
+    
     func fetchTemplateItems(for uid: String) async throws -> [TemplateListItem] {
-        let response : [TemplateListItem] = try await client.from("Template").select().eq("user_id", value: uid).order("created_at", ascending: true).execute().value
-     
-//        
-//        let decoder = JSONDecoder()
-//            decoder.keyDecodingStrategy = .convertFromSnakeCase
-//        let templates = try decoder.decode([TemplateListItem].self, from: data)
+        let response : [TemplateListItem] = try await client.from("Template").select().eq("user_id", value: uid)
+            .order("created_at", ascending: true)
+            .execute()
+            .value
         
-        print("returning...")
+        return response
+    }
+    
+    func fetchTemplateSections(for uid: String) async throws  {
+        // -> [TemplateSection]
+        let response: [TemplateSection] = try await client.rpc("get_template_sections", params: ["template_id": uid]).execute().value
         print(response)
-        
-        return response 
     }
         //
         //    func deleteToDoItem(id: Int) async throws {

@@ -29,7 +29,6 @@ class Account: ObservableObject, Equatable, Identifiable {
     
     func add_template(template: Template) {
         let temPay = TemplatePayload(id: template.id, userId: self.id, title: template.title)
-//        let link = UserTemplateIdPayload(userId: self.id, templateId: template.id)
         Task {
             do{
                 try await DatabaseManager.shared.addNewTemplate(item: temPay)
@@ -44,13 +43,8 @@ class Account: ObservableObject, Equatable, Identifiable {
     }
     
     func loadTemplatesList() async -> [TemplateListItem] {
-//        var templates: [TemplateListItem] = []
         do {
             return try await DatabaseManager.shared.fetchTemplateItems(for: self.id.uuidString)
-//            for template in templateData {
-//                let newTemplate = Template(id: template.id, title: template.name, owner: self)
-//                templates.append(newTemplate)
-//            }
             
         } catch {
             print("Error in fetching Template List: \(error.localizedDescription)")
