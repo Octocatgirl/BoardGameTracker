@@ -1,20 +1,5 @@
-*** TODO ***
-    Add Template Page:
-        - edit button
-            - delete template
-            - edit template
-            - duplicate template
-        - display account profile images
-    Main Page:
-        - Event view
-            - selection of team for navigation
-            - edit button
-                - can adjust values for event (cannot change teams)
-        - edit button
-            - delete event
-    Other:
-    - Profile view
-    - account creation
-    - account log in
-    - api set up
-    
+Used supabase for database
+
+
+App is currently broken right now.... (was in middle of working on database last)
+Will fix app over the summer so current commit is a stable state
